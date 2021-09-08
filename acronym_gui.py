@@ -20,6 +20,8 @@
 # 1.0.0 08.09.2021 NL Creation
 # 1.0.1 08.09.2021 NL Update
 #   1) Added a line break for very long acronyms
+#   2) Adding a message about how many acronyms we have
+#      (maybe I want to write this in the GUI directly)
 #########################################################################
 # ===============================================================
 # Imports
@@ -133,6 +135,7 @@ if __name__ == '__main__':
     # Read the table of acronyms
     filename = Path(__file__).resolve().parent / 'tables/LISA_acronyms.csv'
     tb_all = read_acronyms(filename)
+    print('Welcome! We currently have {:d} acronyms on file!'.format(len(tb_all)))
 
     # Initialize Tkinter
     root = Tk()
