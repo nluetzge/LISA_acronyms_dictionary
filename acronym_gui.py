@@ -18,7 +18,8 @@
 #
 # VERSION
 # 1.0.0 08.09.2021 NL Creation
-#
+# 1.0.1 08.09.2021 NL Update
+#   1) Added a line break for very long acronyms
 #########################################################################
 # ===============================================================
 # Imports
@@ -33,10 +34,10 @@ from pathlib import Path
 # ===============================================================
 _name = "acronym_gui.py"
 _codename = _name.split('.py')[0]
-_version = "1.0.0"
+_version = "1.0.1"
 __all__ = ['read_acronyms', 'find_word', 'dict']
 ASSETS_PATH = Path(__file__).resolve().parent / "assets"
-
+MAXL = 30
 
 # ===============================================================
 # Functions
@@ -114,65 +115,74 @@ def dict():
     else:
         descr_title.config(text='Description')
         descripton.insert(END, result[1])
-    meaning.config(text=result[0])
+
+    if len(result[0])>MAXL:
+        # Probably the weirdest way of a line break ever, but it works
+        find = [s==' ' for s in result[0]]
+        indices = np.arange(len(result[0]))[find]
+        ibreak = indices[max(np.where(indices < MAXL)[0])]
+        meaning.config(text='{} \n {}'.format(result[0][:ibreak], result[0][ibreak:]))
+    else:
+        meaning.config(text=result[0])
 
 
 # ===============================================================
-# Main
+# ===========================  MAIN  ============================
 # ===============================================================
-# Read the table of acronyms
-filename = Path(__file__).resolve().parent / 'LISA_acronyms.csv'
-tb_all = read_acronyms(filename)
+if __name__ == '__main__':
+    # Read the table of acronyms
+    filename = Path(__file__).resolve().parent / 'tables/LISA_acronyms.csv'
+    tb_all = read_acronyms(filename)
 
-# Initialize Tkinter
-root = Tk()
+    # Initialize Tkinter
+    root = Tk()
 
-# Set geometry and attributes of main window
-root.geometry("500x500")
-root.configure(bg="white")
-root.title("LISA Acronym Dictionary")
+    # Set geometry and attributes of main window
+    root.geometry("500x500")
+    root.configure(bg="white")
+    root.title("LISA Acronym Dictionary")
 
-# Create a white canvas
-canvas = Canvas(root, bg="white", height=500, width=500, bd=0, highlightthickness=0, relief="ridge")
-canvas.place(x=0, y=0)
+    # Create a white canvas
+    canvas = Canvas(root, bg="white", height=500, width=500, bd=0, highlightthickness=0, relief="ridge")
+    canvas.place(x=0, y=0)
 
-# Set the title image
-title_image = PhotoImage(file=ASSETS_PATH / "title_image.png")
-title = canvas.create_image(250, 80, image=title_image)
+    # Set the title image
+    title_image = PhotoImage(file=ASSETS_PATH / "title_image.png")
+    title = canvas.create_image(250, 80, image=title_image)
 
-# Set the entry text box to write the acronyms in
-text_box_bg = PhotoImage(file=ASSETS_PATH / "TextBox_Bg.png")
-token_entry_img = canvas.create_image(250, 187.5, image=text_box_bg)
-canvas.create_text(90.0, 170.0, text="Acronym", fill="#515486",
-                   font=("Arial-BoldMT", int(13.0)), anchor="w")
-# Here we enter the word
-word = Entry(bd=0, bg="#F6F7F9", highlightthickness=0)
-word.place(x=90, y=180, width=321.0, height=35)
-word.focus()
-# We also bind the enter key to the entry so that we can search with hitting ENTER/RETURN
-word.bind('<Return>', (lambda event: dict()))
+    # Set the entry text box to write the acronyms in
+    text_box_bg = PhotoImage(file=ASSETS_PATH / "TextBox_Bg.png")
+    token_entry_img = canvas.create_image(250, 187.5, image=text_box_bg)
+    canvas.create_text(90.0, 170.0, text="Acronym", fill="#515486",
+                       font=("Arial-BoldMT", int(13.0)), anchor="w")
+    # Here we enter the word
+    word = Entry(bd=0, bg="#F6F7F9", highlightthickness=0)
+    word.place(x=90, y=180, width=321.0, height=35)
+    word.focus()
+    # We also bind the enter key to the entry so that we can search with hitting ENTER/RETURN
+    word.bind('<Return>', (lambda event: dict()))
 
-# Creating Frame 1 - for the spelled out acronym
-frame1 = Frame(root, bg='White')
-meaning = Label(frame1, text="", font=("Helvetica 25 bold"), fg="#26DE7B", bg='white')
-meaning.pack()
-frame1.place(x=250, y=260, anchor='center')
+    # Creating Frame 1 - for the spelled out acronym
+    frame1 = Frame(root, bg='White')
+    meaning = Label(frame1, text="", font=("Helvetica 25 bold"), fg="#26DE7B", bg='white')
+    meaning.pack()
+    frame1.place(x=250, y=260, anchor='center')
 
-# Creating Frame 2 - for the description of the acronym
-frame2 = Frame(root, bg='White')
-descr_title = Label(frame2, text="", font=("Helvetica 10 bold"), bg='White', fg='dark grey')
-descr_title.pack(side=TOP)
-descripton = Text(frame2, height=5, width=52, font=("Helvetica 12"),
-                  wrap='word', bg='White', fg='#4D4D4D', borderwidth=0, highlightthickness=0)
-descripton.pack()
-frame2.place(x=50, y=300, width=400, height=200)
+    # Creating Frame 2 - for the description of the acronym
+    frame2 = Frame(root, bg='White')
+    descr_title = Label(frame2, text="", font=("Helvetica 10 bold"), bg='White', fg='dark grey')
+    descr_title.pack(side=TOP)
+    descripton = Text(frame2, height=5, width=52, font=("Helvetica 12"),
+                      wrap='word', bg='White', fg='#4D4D4D', borderwidth=0, highlightthickness=0)
+    descripton.pack()
+    frame2.place(x=50, y=300, width=400, height=200)
 
-# Add the search button
-search_button_img = PhotoImage(file=ASSETS_PATH / "search_button_green.png")
-search_button = Button(
-    image=search_button_img, borderwidth=0, highlightthickness=0,
-    command=dict, relief="flat")
-search_button.place(x=160, y=430, width=180, height=56)
+    # Add the search button
+    search_button_img = PhotoImage(file=ASSETS_PATH / "search_button_green.png")
+    search_button = Button(
+        image=search_button_img, borderwidth=0, highlightthickness=0,
+        command=dict, relief="flat")
+    search_button.place(x=160, y=430, width=180, height=56)
 
-# Execute Tkinter
-root.mainloop()
+    # Execute Tkinter
+    root.mainloop()
