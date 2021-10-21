@@ -30,7 +30,6 @@ from tkinter import *
 from astropy.io import ascii
 import numpy as np
 from pathlib import Path
-
 # ===============================================================
 # Module-wide variables
 # ===============================================================
@@ -175,7 +174,7 @@ if __name__ == '__main__':
     frame2 = Frame(root, bg='White')
     descr_title = Label(frame2, text="", font=("Helvetica 10 bold"), bg='White', fg='dark grey')
     descr_title.pack(side=TOP)
-    descripton = Text(frame2, height=5, width=52, font=("Helvetica 12"),
+    descripton = Text(frame2, height=5, width=49, font=("Helvetica 12"),
                       wrap='word', bg='White', fg='#4D4D4D', borderwidth=0, highlightthickness=0)
     descripton.pack()
     frame2.place(x=50, y=300, width=400, height=200)
