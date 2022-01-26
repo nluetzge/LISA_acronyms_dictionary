@@ -60,7 +60,7 @@ def read_acronyms(filename):
         Table of the acronyms.
 
     """
-    tb_all = ascii.read(filename)
+    tb_all = ascii.read(filename, format='csv')
     return tb_all
 
 
@@ -134,6 +134,7 @@ if __name__ == '__main__':
     # Read the table of acronyms
     filename = Path(__file__).resolve().parent / 'tables/LISA_acronyms.csv'
     tb_all = read_acronyms(filename)
+
     print('Welcome! We currently have {:d} acronyms on file!'.format(len(tb_all)))
 
     # Initialize Tkinter
