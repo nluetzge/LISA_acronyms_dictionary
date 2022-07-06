@@ -1,0 +1,108 @@
+Acronym,Translation,Description
+ADC,Analog-to-Digital Converter,
+APM,Antenna Pointing Mechanism,
+BAM,Beam Alignment Mechanism,"[IDS doc] Each OB has two Beam Alignment Mechanisms (BAMs): one shifts the TX beam, the other the RX beam. It effectively provides an efficient way of compensating Tilt-To-Length effects arising from imperfections and misalignments in the optical system. "
+BEE,Back End Electronics,(PMS)
+CAM,Constellation Acquisition Mode,
+CAS,Constellation Acquisition Sensor (or for ADS Coarse Acquisition Sensor),
+CBE,Current Best Estimate(s),
+CCCP,"Cleanliness, Contamination, and Control Plan",
+CCU,Caging Control Unit,
+CFRP,Carbon Fiber Reinforced Polymer,
+CGMPS,Cold Gas Micro Propulsion System,
+CPIs,Consortium Provided Items,
+CVM,Caging and Venting Mechanism,
+DF,Drag Free,
+DFACS,Drag-Free Attitude Control System,
+DPS,Differential Power Sensing,from Maike's thesis
+DSCU,Diagnostics Signal Conditioning Unit,"Diagnostics Signal Conditioning Unit (confirmed at LIG PM3, orally, by Miquel)"
+DWS,Differential Wave-front Sensor,
+EBB,Elegant BreadBoard,
+EBM,External Balance Mass,
+EDU,Engineering Development Unit (EDU),
+EH,Electrode Housing,
+EID,Experiment Interface Document,
+ePMS,Extended Phase Measurement System,
+FA,Fiber Amplifier,
+FBD,Functional Block Diagram,
+FDS,Frequency Distribution System,
+FEE,Front End Electronics,
+FF OGSE,Far-Field Optical Ground Support Equipment,prononcer [fogzy]
+FPGA,Field-Programmable Gate Array ,"A field-programmable gate array (FPGA) is an integrated circuit designed to be configured by a customer or a designer after manufacturing � hence the term ""field-programmable""."
+FS,Flight Spare,
+FSM,Finite State Machine,
+FSU,Fibre-Switch-Unit(s),
+GPRM,"Grabbing, Positioning and Release Mechanism","[IDS doc] Each OB has two Fibre-Switch-Units (FSUs), one to provide the means to switch between the prime and redundant OB feed fibres (coming from the laser system) and one to switch between the prime and redundant backlink fibre."
+GRS,Gravitational Reference Sensor,
+GTO,Ground to Orbit,"refers to variation of TTL between what was measured on ground during AIVT, and wht we end up with in space - [my wording of my I got from Ewan@LIG PM3]"
+GW,Gravitational Wave(s),
+HR,High Resolution,"[PDD] The GRS FEE is based on the 100 kHz capacitive sensing and audio-frequency actuation unit used in LPF. It has both High Resolution (HR) and Wide Range (WR) modes, offering, respectively, science mode operation with small displacements (up to 100 _m) and actuation forces (several nN) and a test mass acquisition/accelerometer mode with �wall-to-wall� sensing (4 mm) and larger (_N) forces."
+IBM,Internal Balance Mass,
+ICC,Instrument Control Computer,cf EID-B 8.6
+IDA,Initial Displacement Angle,
+IFO,Interferometer,
+ILS,Instrument Line of Sight,cf EID-A EIDA-R010290
+INREP,Initial Noise REduction Pipeline,This is a part of the L0 to L1 pipeline
+ISUK,Inertial Sensor UV Kit,
+LCA,LISA Core Assembly,
+LDC,LISA Data Challenge,"(it's a group, they generate signals and simulate LISA)"
+LH,Laser Head,
+LID / LIC,Laser Induced Damage (LID) and Laser Induced Contamination (LIC),
+LISA,Laser Interferometer Space Antenna,
+LLD,Launch Lock Device,
+LSs,Laser Systems,
+LTPDA ,,LTPDA is a MATLAB toolbox that uses an object-oriented approach to data analysis (https://www.elisascience.org/ltpda/)
+LVDS,Low Voltage Differential Signaling,
+MCU,Mechanism Control Unit,"[IDS doc] The Mechanism Control Unit (MCU) is an avionics unit dedicated to the control of the mechanisms mounted on the optical bench. These mechanisms are: the PAAM, the FSUA and the BAM. The unit shall interface with the mechanisms to provide power and command and control functions. It is expected that the MCU interfaces to the ICC (or to the OBC, if no ICC appears in the final system design)."
+MIDA,Mean (Earth) Initial Displacement Angle,
+MFS,Master Frequency Stabilisation,
+MOSA,Moving Optical Sub-Assembly,
+MTS,Metasurface (antennas),
+NGRM,Next Generation Radiation Monitor,
+NTC,Negative Temperature Coefficient.,"(some DIAG temp. sensors). NTC stands for �Negative Temperature Coefficient. NTC thermistors are resistors with a negative temperature coefficient, which means that the resistance decreases with increasing temperature. They are primarily used as resistive temperature sensors and current-limiting devices."
+OATM,Optical Assembly Tracking Mechanism,
+OB,Optical Bench,
+OBC,On-Board Computer,
+OBCP,On-Board Control Procedure,LPF acronym at least
+OBSW,On-Board Software,
+OMS,Optical Metrology System,
+OR,Operational Requirement(s),
+PAAM,Point-Ahead Angle Mechanism,"The PAAM is a steering mirror that points ahead the outgoing (RX) beam to compensate for the distance the distant spacecraft moves in the light travel time between spacecraft. (Thesis Maike)
+[IDS doc] The transmit laser beam steering angle needs to be adjusted at least once every few minutes with an accuracy of ~10 nrad to ensure the beam is received by the distant spacecraft. This will be done through the use of the PAAM in a step-and-stare mode of operation."
+PBS,Polarising Beam Splitter (might be an LPF acronym),
+PIAR,Performance and Impact Assessment Review,
+PLL,Phase-Locked Loop,
+PMON,Power monitor(s),
+PMS,Phase Measurement Subsystem (=phasemeter),
+PRDS,Phase Reference Distribution System,
+PRN,Pseudo Random Noise,
+PSCU,Power Switching Control Unit,"part of ePMS review datapack / QPR power supply and failure handling. Not to be confused with the SCU for thermal control and diagnostics (thermistors, heaters... etc)"
+PSM,Power Supply Module,part of ePMS review datapack
+PT,Pilot Tone,The pilot tone (e.g. a 75 MHz sinusoidal tone) is added to beatnote signals within the phasemeter analog front end. Its purpose is to measure sampling aperture ji�ers within the ADCs which are later used to correct these jitt�ers. [Timing architecture TN]
+QPD,Quadrant Photo Detector,
+QPR,Quadrant Photo-Receiver(s),"Each QPR features three main components: 1) an InGaAs quadrant photodiode (QPD) with four segments, aiming to convert the optical signal into a photocurrent; 
+2) a front-end electronics (FEE) with the main goal of amplifying each QPD segment�s photocurrent and converting it into voltage; 
+3) a mechanical enclosure aiming to provide precise and stable positioning of each QPD with the optical beam, to assure the electromagnetic compatibility of the QPR and to assembly the QPD and the FEE in the limited volume allocated on the OB."
+RACS,Reaction and Attitude Control subsystem (combined RCS and MPS),
+RFA,Request for Frequency Assignment,
+RIN,Relative Intensity Noise (laser),
+RIU,Remote Interface Unit,
+RPE,"Relative Pointing/Performance Error (= jitter, = pointing stability)","Control Performance ECSS says Relative Performance Error, but knowing this is specifically about pointing performance� // the angular separation between the instantaneous pointing direction and the short-time (*) average pointing direction during a given time period. (*) discussion on this delta-t duration for averaging in ECSS (appendix A.1.4)"
+RTOS,Real Time Operating System.,
+RU,Reference Unit,"[GRS-FEE] In the baseline design of the SAU an additional unit, the Reference Unit (RU), is introduced providing common very stable voltage reference to all Analog Units (AUs)."
+SAU ,Sensing and Actuation Unit,
+SCET,Spacecraft Elapsed Time,
+SI,Science Investigation(s),
+SO,Science Objective(s),
+SRS,Shock Response Spectrum,
+STOP,Structural Thermo-Optical Performance,
+TBM,Trimming Balance Mass,
+TCVR,Transceiver,
+TIA,Transimpedance Amplifiers,The photo current generated by the photodiode is converted to a voltage byva transimpedance amplifier (TIA) [from Maike's thesis]
+TDI,Time Delay Interferometry (algorithm),
+TM,Test Mass,
+TSP,Temporal and Spatial Partitioning,
+UART,Universal Asynchronous Receiver Transmitter,
+USO,Ultra Stable Oscillator,
+XDA,X-band Downlink Assembly,
+WR,Wide Range,"[PDD] The GRS FEE is based on the 100 kHz capacitive sensing and audio-frequency actuation unit used in LPF. It has both High Resolution (HR) and Wide Range (WR) modes, offering, respectively, science mode operation with small displacements (up to 100 _m) and actuation forces (several nN) and a test mass acquisition/accelerometer mode with �wall-to-wall� sensing (4 mm) and larger (_N) forces."
