@@ -86,16 +86,15 @@ def find_word(tb_all, word):
     find = tb_all['Acronym'] == word.upper()
     # If it was found, extract Translation and Description
     if np.sum(find) > 0:
-        trans = tb_all['Translation'][find].data[0]
-        descr = tb_all['Description'][find].data[0]
+        trans = tb_all['Translation'][find].data
+        descr = tb_all['Description'][find].data
         # If ther is no description, return and empty string
-        if np.ma.is_masked(descr):
-            descr = ''
+        descr[np.ma.is_masked(descr)] = ''
         return trans, descr
     # If it was not found return the empty strings.
     else:
         print('Did not find {:s}'.format(word))
-        return '', ''
+        return ['Did not find {:s}'.format(word)], ['']
 
 
 def dict():
@@ -105,26 +104,58 @@ def dict():
     -------
 
     """
-    # Search the table for the acronym
-    result = find_word(tb_all, word.get())
+    # Clearing all fields:
     # Delete the description text if there is any
     descripton.delete("1.0", "end")
+    descripton2.delete("1.0", "end")
+    descr_title.config(text='')
+    descr_title2.config(text='')
+    meaning.config(text='')
+    meaning2.config(text='')
+    # Search the table for the acronym
+    trans, descr = find_word(tb_all, word.get())
     # Write description title and content in the text box
-    if result[1] == '':
+    # The first one:
+    if descr[0] == '':
         # Remove the title if we don't have any description
         descr_title.config(text='')
     else:
         descr_title.config(text='Description')
-        descripton.insert(END, result[1])
+        descripton.insert(END, descr[0])
 
-    if len(result[0])>MAXL:
+    if len(trans[0])>MAXL:
         # Probably the weirdest way of a line break ever, but it works
-        find = [s==' ' for s in result[0]]
-        indices = np.arange(len(result[0]))[find]
+        find = [s==' ' for s in trans[0]]
+        indices = np.arange(len(trans[0]))[find]
         ibreak = indices[max(np.where(indices < MAXL)[0])]
-        meaning.config(text='{} \n {}'.format(result[0][:ibreak], result[0][ibreak:]))
+        meaning.config(text='{} \n {}'.format(trans[0][:ibreak], trans[0][ibreak:]))
     else:
-        meaning.config(text=result[0])
+        meaning.config(text=trans[0])
+
+    # See if there is a second one:
+    if len(trans) > 1:
+        # The first one:
+        if descr[1] == '':
+            # Remove the title if we don't have any description
+            descr_title2.config(text='')
+        else:
+            descr_title2.config(text='Description')
+            descripton2.insert(END, descr[1])
+
+        if len(trans[1])>MAXL:
+            # Probably the weirdest way of a line break ever, but it works
+            find = [s==' ' for s in trans[1]]
+            indices = np.arange(len(trans[1]))[find]
+            ibreak = indices[max(np.where(indices < MAXL)[0])]
+            meaning2.config(text='{} \n {}'.format(trans[1][:ibreak], trans[1][ibreak:]))
+        else:
+            meaning2.config(text=trans[1])
+
+        root.geometry("500x800")
+        search_button.place(x=160, y=740, width=180, height=56)
+    else:
+        root.geometry("500x500")
+        search_button.place(x=160, y=420, width=180, height=56)
 
 
 # ===============================================================
@@ -146,7 +177,7 @@ if __name__ == '__main__':
     root.title("LISA Acronym Dictionary")
 
     # Create a white canvas
-    canvas = Canvas(root, bg="white", height=500, width=500, bd=0, highlightthickness=0, relief="ridge")
+    canvas = Canvas(root, bg="white", height=750, width=500, bd=0, highlightthickness=0, relief="ridge")
     canvas.place(x=0, y=0)
 
     # Set the title image
@@ -165,13 +196,13 @@ if __name__ == '__main__':
     # We also bind the enter key to the entry so that we can search with hitting ENTER/RETURN
     word.bind('<Return>', (lambda event: dict()))
 
-    # Creating Frame 1 - for the spelled out acronym
+    # Creating Frame 1 - for the first spelled out acronym
     frame1 = Frame(root, bg='White')
     meaning = Label(frame1, text="", font=("Helvetica 25 bold"), fg="#26DE7B", bg='white')
     meaning.pack()
     frame1.place(x=250, y=260, anchor='center')
 
-    # Creating Frame 2 - for the description of the acronym
+    # Creating Frame 2 - for the first description of the acronym
     frame2 = Frame(root, bg='White')
     descr_title = Label(frame2, text="", font=("Helvetica 10 bold"), bg='White', fg='dark grey')
     descr_title.pack(side=TOP)
@@ -180,12 +211,27 @@ if __name__ == '__main__':
     descripton.pack()
     frame2.place(x=50, y=300, width=400, height=200)
 
+    # Creating Frame 3 - for the second spelled out acronym
+    frame3 = Frame(root, bg='White')
+    meaning2 = Label(frame3, text="", font=("Helvetica 25 bold"), fg="#26DE7B", bg='white')
+    meaning2.pack()
+    frame3.place(x=250, y=500, anchor='center')
+
+    # Creating Frame 4 - for the second description of the acronym
+    frame4 = Frame(root, bg='White')
+    descr_title2 = Label(frame4, text="", font=("Helvetica 10 bold"), bg='White', fg='dark grey')
+    descr_title2.pack(side=TOP)
+    descripton2 = Text(frame4, height=5, width=49, font=("Helvetica 12"),
+                      wrap='word', bg='White', fg='#4D4D4D', borderwidth=0, highlightthickness=0)
+    descripton2.pack()
+    frame4.place(x=50, y=540, width=400, height=200)
+
     # Add the search button
     search_button_img = PhotoImage(file=ASSETS_PATH / "search_button_green.png")
     search_button = Button(
         image=search_button_img, borderwidth=0, highlightthickness=0,
         command=dict, relief="flat")
-    search_button.place(x=160, y=430, width=180, height=56)
+    search_button.place(x=160, y=420, width=180, height=56)
 
     # Execute Tkinter
     root.mainloop()
