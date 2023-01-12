@@ -1,0 +1,25 @@
+Acronym,Translation,Description
+AD,Applicaple Document,
+ATHENA,Advanced Telescope for High-ENergy Astrophysics,ESA's second L mission besides LISA. X-ray observatory that was supposed to be launched around the same time of LISA.
+EFC2,ESA/ESTEC Frame Contract 2,
+ESDC,ESAC Science Data Centre,
+FTE,Full-Time Equivalent,
+L0,Level 0 data,Raw data from the Telescope
+L1,Level 1 data,TDI data streams
+L2,Level 2 data,After global fit. Propablity functions for individual sources.
+L3,Level 3 data,Catalogue of sources.
+MM,Mission Manager,
+PY,Person Years,
+SCI,Science Directorate of ESA,
+SCI-F,Future Missions Department in SCI,
+SCI-S,Science and Operations Department in SCI,
+SCI-SD,Development Division of SCI-S,
+ScOC,Science Operations Coordinator,
+SDM,SOC Development Manager,
+SOSL,Science Operations Study Lead,
+STE,Service Time Equivalent,
+MPS CG,Cold Gas Micro Propulsion System,
+CFI,Customer-Furnished Items,
+PDR,Preliminary Design Review,
+IRD,Interface Requirement Document,
+TRA,Technology Readiness Assessment,
