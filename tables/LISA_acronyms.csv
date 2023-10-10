@@ -361,7 +361,7 @@ MPR,Mission Performance Requirement,
 MPS CG,Cold Gas Micro Propulsion System,
 MR,Mission Requirement,""" This is a test for a longer description lets see how the space can deal with this if I have two of them"""
 MR,Measurement Requirement,""" This is a test for a longer description lets see how the space can deal with this if I have two of them"""
-MRD,Mission Requirement Document,The Mission Requirements Document (MRD) stems from the Science Requirements document [SciRD] and it contains the mission requirements considered necessary to achieve the science goals.
+MRD,Mission Requirements Document,The Mission Requirements Document (MRD) stems from the Science Requirements document [SciRD] and it contains the mission requirements considered necessary to achieve the science goals.
 MRF,Mechanical Reference Frame,
 MSC,Mother Spacecraft,
 MSEM,Mission Systems Engineering Managers,
