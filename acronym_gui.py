@@ -89,7 +89,7 @@ def find_word(tb_all, word):
         trans = tb_all['Translation'][find].data
         descr = tb_all['Description'][find].data
         # If ther is no description, return and empty string
-        descr[np.ma.is_masked(descr)] = ''
+        descr[descr.mask] = ''
         return trans, descr
     # If it was not found return the empty strings.
     else:
@@ -151,8 +151,8 @@ def dict():
         else:
             meaning2.config(text=trans[1])
 
-        root.geometry("500x800")
-        search_button.place(x=160, y=740, width=180, height=56)
+        root.geometry("500x700")
+        search_button.place(x=160, y=620, width=180, height=56)
     else:
         root.geometry("500x500")
         search_button.place(x=160, y=420, width=180, height=56)

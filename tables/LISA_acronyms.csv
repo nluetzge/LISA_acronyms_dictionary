@@ -368,7 +368,8 @@ MBW,Measurement Bandwidth,
 MCI,"Mass, Center of gravity and Inertias",
 MCMC,Markov-Chain Monte Carlo,
 MCR,Mission Consolidation Review,
-MCU,Mechanism Control Unit,"[IDS doc] The Mechanism Control Unit (MCU) is an avionics unit dedicated to the control of the mechanisms mounted on the optical bench. These mechanisms are: the PAAM, the FSUA and the BAM. The unit shall interface with the mechanisms to provide power and command and control functions. It is expecte"
+MCU,Mechanism Control Unit,"[IDS doc] The Mechanism Control Unit (MCU) is an avionics unit dedicated
+ to the control of the mechanisms mounted on the optical bench. These mechanisms are: the PAAM, the FSUA and the BAM. The unit shall interface with the mechanisms to provide power and command and control functions."
 MDR,Main Data Repository,
 MECC,Merger Event Coordination Committee,
 MEL,Master Equipment List,
@@ -473,7 +474,7 @@ PCP,Payload Commanding and Processing,
 PCP-GSE,Payload Commanding and Processing Ground Support Equipment,
 PCS,Payload Control Subsystem,
 PCU,Phasemeter Control Unit, or sometimes Power and Control Unit
-PCU,Power Conditioning Unit
+PCU,Power Conditioning Unit,
 PD,Photo Diode,
 PDD,Payload Description Document,
 PDF,Probability Density Function,
