@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 """Script to create an acronym.tex file out of the list"""
 #########################################################################
-# IDENT			tex_acronyms.py
+# IDENT			csv2tex.py
 # LANGUAGE		Python
 # AUTHOR		N. Luetzgendorf
 # PURPOSE       This is a script that creates an acronym.tex file
 #               for the acronyms usepackage in latex from the csv acronym table.
 #
-# usage: tex_acronyms.py [-h]
+# usage: csv2tex.py [-h]
 #
 #
 # optional arguments:
@@ -15,19 +15,16 @@
 
 # VERSION
 # 1.0.0 13.01.2023 NL Creation
-#
+# 1.0.1 27.10.2023 NL Update renamed tex_acronym.py
 #########################################################################
 # ===============================================================
 # Imports
 # ===============================================================
-import os
 import time
 from datetime import datetime
-import numpy as np
-from astropy.table import join, Table, unique
+from astropy.table import unique
 from pathlib import Path
 from acronym_gui import read_acronyms
-import argparse
 
 _table_dic = {'Acronym': 'U10',
               'Translation': 'U80',

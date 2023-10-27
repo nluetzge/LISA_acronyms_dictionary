@@ -28,7 +28,7 @@ import os
 import time
 from datetime import datetime
 import numpy as np
-from astropy.table import join, Table
+from astropy.table import join, Table, unique
 from pathlib import Path
 from acronym_gui import read_acronyms
 import argparse
@@ -67,6 +67,11 @@ tb_out = Table([np.char.upper(tb_new['Acronym'].data),
 tb_out['Translation'][tb_new['Translation_1'].mask] = tb_new['Translation_2'][tb_new['Translation_1'].mask]
 tb_out['Description'][tb_new['Description_1'].mask] = tb_new['Description_2'][tb_new['Description_1'].mask]
 
+# Remove duplicates
+n_before = len(tb_out)
+tb_out = unique(tb_out, keys=['Acronym', 'Translation'], keep='first')
+n_after = len(tb_out)
+print('Removed {:} duplicates'.format(n_before-n_after))
 
 # How many acronyms did we add?
 nadd = len(tb_out) - len(tb_all)
