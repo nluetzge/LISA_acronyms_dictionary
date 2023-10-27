@@ -473,6 +473,7 @@ PCP,Payload Commanding and Processing,
 PCP-GSE,Payload Commanding and Processing Ground Support Equipment,
 PCS,Payload Control Subsystem,
 PCU,Phasemeter Control Unit, or sometimes Power and Control Unit
+PCU,Power Conditioning Unit
 PD,Photo Diode,
 PDD,Payload Description Document,
 PDF,Probability Density Function,
