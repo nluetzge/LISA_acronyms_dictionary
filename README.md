@@ -1,6 +1,6 @@
 # LISA Acronym Dictionary
 
-Welcome to the LISA Acronym Dictionary. I created this out of frustration about the many acronyms used in this project. The screenshot below shows how the GUI looks like on a MacOSX, I don't know how it looks on a different OS, but happy for feedback. 
+Welcome to the LISA Acronym Dictionary. I created this out of frustration about the many acronyms used in this project. The screenshot below shows how the GUI looks like on a MacOSX, I don't know how it looks on a different OS, but happy for feedback. This tool uses the official ESA document `ESA-LISA-EST-SC-LI-0001_LISA Acronyms, Definitions and Conventions` Issue: 1, Revision: 0 and is meant to keep synchronized with this document. 
 
 ![Screenshof of the GUI](./screenshots/gui1.png?raw=true "Optional Title")
 
