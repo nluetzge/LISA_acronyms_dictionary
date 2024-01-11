@@ -1,11 +1,12 @@
 #!/usr/bin/env python
-"""Script to create an acronym.tex file out of the list"""
+"""Script to create a list out of an acronym.tex file """
 #########################################################################
 # IDENT			tex2csv.py
 # LANGUAGE		Python
 # AUTHOR		N. Luetzgendorf
 # PURPOSE       This is a script that takes the acronums.tex file
-#               and creates a new table of acronyms. Its a biot hacked
+#               and creates a new table of acronyms. Its a bit of a hack but worked
+#               This was used to take all the redbook acronyms back into the list
 #
 # usage: tex2csv.py [-h]
 #
