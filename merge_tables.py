@@ -63,11 +63,21 @@ tb_out = Table([np.char.upper(tb_new['Acronym'].data),
                 tb_new['Translation_1'].data,
                 tb_new['Description_1'].data], names=_table_dic.keys(), dtype=_table_dic.values())
 
+
 # Fill in the blanks from the previous master table with the new table
 tb_out['Translation'][tb_new['Translation_1'].mask] = tb_new['Translation_2'][tb_new['Translation_1'].mask]
 tb_out['Description'][tb_new['Description_1'].mask] = tb_new['Description_2'][tb_new['Description_1'].mask]
 
-# Remove duplicates
+# Find duplicates that are different from what we already have
+find = ((tb_new['Translation_1'].mask==False) & (tb_new['Translation_2'].mask==False)) &\
+       (tb_new['Translation_1'] != tb_new['Translation_2'])
+if find.any():
+    tb_tmp = tb_new[find]
+    for tb in tb_tmp:
+        tb_out.add_row([tb['Acronym'],tb['Translation_2'],tb['Description_2']])
+
+
+# Remove duplicates (just in case)
 n_before = len(tb_out)
 tb_out = unique(tb_out, keys=['Acronym', 'Translation'], keep='first')
 n_after = len(tb_out)
