@@ -121,9 +121,9 @@ DEEP2,Deep Extragalactic Evolutionary Probe 2,
 DEI,"Diversity, Equity and Inclusion Committee",
 DF,drag-free,
 DFACS,Drag-Free Attitude Control System,
-DHLC,Data Handling And Laser Control,
+DHLC,Data Handling And Laser Control,A unit of the PCU within the Phasemeter (PMS) which handles the final filtering of the extracted phase for the TDI pipeline (L0), the DFACs data, the laser transponder lock, as well as the general command and control of the PMS.
 DJF,Design Justification File,
-DLL,delay-locked loop,
+DLL,Delay-Locked Loop,An algorithm implemented within the IPU of the PMS that tracks the PRN modulation encoded on each transmitted beam within an inter-spacecraft link. Gives a pseudo-range measurement of the separation between spacecraft, used as part of TDI.
 DLR,Deutsches Zentrum fuer Luft- und Raumfahrt,German Aerospace Center
 DM,Dark Matter,
 DMS,Document Management System,
@@ -146,7 +146,7 @@ DSP,Data Signal Processing,
 DTM,Deterministic Transfer Manoeuvre,
 DTU,Danmarks Tekniske Universitet,Technical University of Denmark
 DWD,Double White Dwarf (binary),
-DWS,Differential Wavefront Sensing,
+DWS,Differential Wavefront Sensing,A comparison of the phase difference between the segments of a QPR, performed by the PMS, results in the angle of incidence of the laser beam onto the QPR.
 E2E,End-to-End,
 EBB,Engineering (or Elegant) Bread Board,
 EBM,External Balance Mass,
@@ -166,7 +166,7 @@ ELISA,Evolved Laser Interferometer Space Antenna,
 ELITE,European LISA Technology Experiment,
 ELT,Extremely Large Telescope,
 ELV,Expendable Launch Vehicle,
-EM,Engeneering Model,Simplification of the reality to address a complex problem by simple rules that can be described by means of equations EM have all the function but usually not the right interfaces (lab equipment instead of proper harness)
+EM,Engineering Model,Simplification of the reality to address a complex problem by simple rules that can be described by means of equations EM have all the function but usually not the right interfaces (lab equipment instead of proper harness)
 EMA,Electro-Magnetic,
 EMC,Electro-Magentic Compatibility,
 EMI,Electro-Magentic Interference,
@@ -196,7 +196,8 @@ FAQ,Frequently Asked Question(s),
 FBD,Functional Block Diagram,
 FCC,Future Circular Collider,
 FDIR,"Failure Detection, Isolation, And Recovery",
-FDS,Frequency Distribution System,
+FDS,Frequency Distribution System,A module of the IPU of the Phasemeter (PMS) that is responsible for distributing clocks needs for phase extraction. To be renamed to Frequency Distribution Module (FDM).
+FDM,Frequency Distribution Module,A module of the IPU of the Phasemeter (PMS) that is responsible for distributing clocks needs for phase extraction.
 FE,Finite Element,
 FEE,Front-End Electronics,
 FEE SAU,Front-End Electronics Sensing And Actuation Unit,
@@ -293,7 +294,7 @@ IOT,Instruments Operations Team,
 IPC,Industrial Policy Committee,
 IPT,Integrated Product Team,
 IPTF,intermediate Palomar Transient Factory,
-IPU,Interferometer Processing Unit,
+IPU,Interferometric Processing Unit,A unit of the Phasemeter (PMS) that connects to the QPRs and performs the phase extraction using DPLLs.
 IRD,Interface Requirement Document,
 ISC,Inter-spacecraft Laser Communication,
 ISH,Inertial Sensor Head,
@@ -312,7 +313,7 @@ JPL,Jet Propulsion Laboratory,
 JWST,James Webb Space Telescope,
 KAGRA,Kamioka Gravitational-wave Detector,
 KSC,Kennedy Space Center,
-L0,Level 0 data,Raw data from the Telescope
+L0,Level 0 data,Raw data from the Phasemeter (PMS) phase extraction and filtering, delivered by the PCU to the spacecraft platform and then downlinked to Earth.
 L0.5,Level 0.5 data,
 L1,Level 1 data,TDI data streams
 L2,Level 2 data,After global fit. Propablity functions for individual sources.
@@ -494,7 +495,7 @@ PCOS,Physics of the Cosmos,
 PCP,Payload Commanding and Processing,
 PCP-GSE,Payload Commanding and Processing Ground Support Equipment,
 PCS,Payload Control Subsystem,
-PCU,Phasemeter Control Unit,or sometimes Power and Control Unit
+PCU,Phasemeter Control Unit,The unit within the Phasemeter (PMS) that controls and powers the IPU and performs the laser transponder lock
 PCU,Power Conditioning Unit,
 PD,Photo Diode,
 PDD,Payload Description Document,
@@ -519,7 +520,7 @@ PMF,Polarization-Maintaining Fibre,
 PMFDE,Pahse Meter Frequency Distribution Electronics,
 PMFEE,Phase Meter Front-End Electronics,
 PMON,Power monitor(s),
-PMS,Phase Measurement Subsystem,Phasemeter
+PMS,Phase Measurement Subsystem,The Phase Measurement Subsystem or often just Phasemeter is made up of two units, the PCU and the IPU.
 PN,Post-Newtonian,
 POR,Payload Operations Request,
 PPE,Parameterized Post-Einsteinian,
