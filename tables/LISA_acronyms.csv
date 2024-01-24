@@ -495,7 +495,7 @@ PCOS,Physics of the Cosmos,
 PCP,Payload Commanding and Processing,
 PCP-GSE,Payload Commanding and Processing Ground Support Equipment,
 PCS,Payload Control Subsystem,
-PCU,Phasemeter Control Unit,The unit within the Phasemeter (PMS) that controls and powers the IPU and performs the laser transponder lock
+PCU,Phasemeter Control Unit,The unit within the Phasemeter (PMS) that controls and powers the IPU, performs the final science data filtering, and performs the laser transponder lock.
 PCU,Power Conditioning Unit,
 PD,Photo Diode,
 PDD,Payload Description Document,
