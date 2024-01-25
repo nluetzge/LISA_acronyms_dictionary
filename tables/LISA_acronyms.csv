@@ -121,9 +121,9 @@ DEEP2,Deep Extragalactic Evolutionary Probe 2,
 DEI,"Diversity, Equity and Inclusion Committee",
 DF,drag-free,
 DFACS,Drag-Free Attitude Control System,
-DHLC,Data Handling And Laser Control,
+DHLC,Data Handling And Laser Control,A unit of the Phasemeter Control Unit (PCU) within the Phasemeter (PMS) which handles the final filtering of the extracted phase for the Time-Delay Interferometry (TDI) pipeline (L0), the Drag-Free Attitude Control System (DFACS) data, the laser transponder lock, as well as the general command and control of the Phasemeter.
 DJF,Design Justification File,
-DLL,delay-locked loop,
+DLL,Delay-Locked Loop,An algorithm implemented within the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that tracks the Pseudo-Random Noise (PRN) modulation phase-encoded on each transmitted beam within an inter-spacecraft link. Gives a pseudo-range measurement of the separation between spacecraft, used as part of Time-Delay Interferometry (TDI).
 DLR,Deutsches Zentrum fuer Luft- und Raumfahrt,German Aerospace Center
 DM,Dark Matter,
 DMS,Document Management System,
@@ -146,7 +146,7 @@ DSP,Data Signal Processing,
 DTM,Deterministic Transfer Manoeuvre,
 DTU,Danmarks Tekniske Universitet,Technical University of Denmark
 DWD,Double White Dwarf (binary),
-DWS,Differential Wavefront Sensing,
+DWS,Differential Wavefront Sensing,A comparison of the phase difference of the beatnote of two interferring beams wihtin the segments of a Quadrant Photoreceiver (QPR), this analysis is performed by the Phasemeter (PMS) and results in the angle of incidence of the laser beams onto the Quadrant Photoreceiver (QPR).
 E2E,End-to-End,
 EBB,Engineering (or Elegant) Bread Board,
 EBM,External Balance Mass,
@@ -166,7 +166,7 @@ ELISA,Evolved Laser Interferometer Space Antenna,
 ELITE,European LISA Technology Experiment,
 ELT,Extremely Large Telescope,
 ELV,Expendable Launch Vehicle,
-EM,Engeneering Model,Simplification of the reality to address a complex problem by simple rules that can be described by means of equations EM have all the function but usually not the right interfaces (lab equipment instead of proper harness)
+EM,Engineering Model,When referring to the design of a payload system in LISA, such as the optical bench, the Phasemeter, or the Laser; an EM is a flight representative model of such a design in terms of form, fit and function and is used for functional and failure effect verification.
 EMA,Electro-Magnetic,
 EMC,Electro-Magentic Compatibility,
 EMI,Electro-Magentic Interference,
@@ -176,7 +176,7 @@ EOB,effective one-body,
 EOL,End-Of-Life,
 EOM,Electro-Optical Modulator,
 EOM,Equations of Motion,
-EPMS,Extended Phase Measuring System,"""Phasemeter - does more than just measure phase (clock transfer, ranging, data format, ..."""
+ePMS,Extended Phase Measuring System,The name given to the Phasemeter (PMS) to explain that it does more than just measure phase, for example it also does the clock-tone transfer, performs pseudo-range measurements, establishes a data link between spacecraft via the laser links, contributes to link aquisition, and is part of the Drag-Free Attitude Control System (DFACS) loop. However it is usually just referred to as PMS or just "The Phasemeter".
 EPS,Extended Press-Schechter Formalism,
 EPTA,European Pulsar Timing Array,
 EQM,Engineering and Qualification Model,
@@ -196,7 +196,8 @@ FAQ,Frequently Asked Question(s),
 FBD,Functional Block Diagram,
 FCC,Future Circular Collider,
 FDIR,"Failure Detection, Isolation, And Recovery",
-FDS,Frequency Distribution System,
+FDS,Frequency Distribution System,A module of the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that is responsible for distributing all the clocks and tones needed for phase extraction, as well as producing and providing the clock sideband 2.4 GHz signals to the Lasers. To be renamed to Frequency Distribution Module (FDM).
+FDM,Frequency Distribution Module,A module of the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that is responsible for distributing all the clocks and tones needed for phase extraction, as well as producing and providing the clock sideband 2.4 GHz signals to the Lasers.
 FE,Finite Element,
 FEE,Front-End Electronics,
 FEE SAU,Front-End Electronics Sensing And Actuation Unit,
@@ -293,7 +294,7 @@ IOT,Instruments Operations Team,
 IPC,Industrial Policy Committee,
 IPT,Integrated Product Team,
 IPTF,intermediate Palomar Transient Factory,
-IPU,Interferometer Processing Unit,
+IPU,Interferometric Processing Unit,A unit of the Phasemeter (PMS) that connects to the Quadrant Photoreceivers (QPRs) and performs the core phase extraction and pseudo-range measurements for the LISA Time-Delay Interferometry (TDI) pipeline, it provides this data to the Phasemeter Control Unit (PCU) after performing the first stage of filtering and downsampling.
 IRD,Interface Requirement Document,
 ISC,Inter-spacecraft Laser Communication,
 ISH,Inertial Sensor Head,
@@ -312,7 +313,7 @@ JPL,Jet Propulsion Laboratory,
 JWST,James Webb Space Telescope,
 KAGRA,Kamioka Gravitational-wave Detector,
 KSC,Kennedy Space Center,
-L0,Level 0 data,Raw data from the Telescope
+L0,Level 0 data,Raw data from the Phasemeter (PMS) phase extraction and filtering, delivered by the Phasemeter Control Unit (PCU) to the spacecraft platform, which then downlinks that data to Earth.
 L0.5,Level 0.5 data,
 L1,Level 1 data,TDI data streams
 L2,Level 2 data,After global fit. Propablity functions for individual sources.
@@ -494,7 +495,7 @@ PCOS,Physics of the Cosmos,
 PCP,Payload Commanding and Processing,
 PCP-GSE,Payload Commanding and Processing Ground Support Equipment,
 PCS,Payload Control Subsystem,
-PCU,Phasemeter Control Unit,or sometimes Power and Control Unit
+PCU,Phasemeter Control Unit,The unit within the Phasemeter (PMS) that controls and powers the Interferometric Processor Unit (IPU), performs the final science data filtering, and performs the laser transponder lock.
 PCU,Power Conditioning Unit,
 PD,Photo Diode,
 PDD,Payload Description Document,
@@ -519,7 +520,7 @@ PMF,Polarization-Maintaining Fibre,
 PMFDE,Pahse Meter Frequency Distribution Electronics,
 PMFEE,Phase Meter Front-End Electronics,
 PMON,Power monitor(s),
-PMS,Phase Measurement Subsystem,Phasemeter
+PMS,Phase Measurement Subsystem,The Phase Measurement Subsystem, or often just referred to as "the Phasemeter", is made up of two units: the Interferometric Processor Unit (IPU), and the Phasemeter Control Unit (PCU). More than just measuring and tracking the longitudinal phase of the beatnote between two interferring laser beams, it also does the clock-tone transfer and performs pseudo-range measurements, which are two key parts of the Time Delay Interferometry (TDI) pipeline to compensate for the drifting of the spacecraft and for their imprecise and unmatched clocks. In addition, the Phasemeter establishes a data link between spacecraft via the laser links, contributes to link aquisition via Fourier Transform analysis, and is part of the Drag-Free Attitude Control System (DFACS) loop using its ability to perform Differential Wavefront Sensing (DWS).
 PN,Post-Newtonian,
 POR,Payload Operations Request,
 PPE,Parameterized Post-Einsteinian,
@@ -535,9 +536,9 @@ PS,Project Scientist,
 PSCU,Power Signal Conditioning Unit,"part of ePMS review datapack / QPR power supply and failure handling. Not to be confused with the SCU for thermal control and diagnostics (thermistors, heaters... etc)"
 PSD,Power Spectral Density,
 PSF,Point-Pread Function,
-PSM,Power Supply Module,part of ePMS review datapack
+PSM,Power Supply Module,A module contained within the Phasemeter Control Unit (PCU) of the Phasemeter (PMS) that is responsible for converting the spacecraft bus power into the power required for the rest of the Phasemeters units and modules.
 PSR,Pulsar,
-PT,Pilot Tone,The pilot tone (e.g. a 75 MHz sinusoidal tone) is added to beatnote signals within the phasemeter analog front end. Its purpose is to measure sampling aperture jitters within the ADCs which are later used to correct these jitters. [Timing architecture TN]
+PT,Pilot Tone,The pilot tone (e.g. a 75/37.5 MHz sinusoidal tone) is added to beatnote signals within the Phasemeters (PMSs) analog front end. Its purpose is to measure sampling aperture jitters within the ADCs which are later used to correct these jitters. [Timing architecture TN]
 PT,platinum,
 PTA,Pulsar Timing Array,
 PTF,Palomar Transient Factory,
