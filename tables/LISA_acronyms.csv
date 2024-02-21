@@ -45,7 +45,7 @@ BB,Breadboard,
 BBDR,Breadboard Design Review,
 BBN,Big Bang Nucleosynthesis,
 BCRS,Barycentric Celestial Reference System,
-BEE,Back End Electronics,(PMS)
+BEE,Back End Electronics,Usually of the Phasemeter
 BH,Black Hole,
 BHB,Black Hole Binary,
 BSM,Physics beyond the Standard Model,
@@ -121,9 +121,9 @@ DEEP2,Deep Extragalactic Evolutionary Probe 2,
 DEI,"Diversity, Equity and Inclusion Committee",
 DF,drag-free,
 DFACS,Drag-Free Attitude Control System,
-DHLC,Data Handling And Laser Control,A unit of the Phasemeter Control Unit (PCU) within the Phasemeter (PMS) which handles the final filtering of the extracted phase for the Time-Delay Interferometry (TDI) pipeline (L0), the Drag-Free Attitude Control System (DFACS) data, the laser transponder lock, as well as the general command and control of the Phasemeter.
+DHLC,Data Handling And Laser Control,"A unit of the Phasemeter Control Unit (PCU) within the Phasemeter (PMS) which handles the final filtering of the extracted phase for the Time-Delay Interferometry (TDI) pipeline (L0), the Drag-Free Attitude Control System (DFACS) data, the laser transponder lock, as well as the general command and control of the Phasemeter."
 DJF,Design Justification File,
-DLL,Delay-Locked Loop,An algorithm implemented within the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that tracks the Pseudo-Random Noise (PRN) modulation phase-encoded on each transmitted beam within an inter-spacecraft link. Gives a pseudo-range measurement of the separation between spacecraft, used as part of Time-Delay Interferometry (TDI).
+DLL,Delay-Locked Loop,"An algorithm implemented within the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that tracks the Pseudo-Random Noise (PRN) modulation phase-encoded on each transmitted beam within an inter-spacecraft link. Gives a pseudo-range measurement of the separation between spacecraft, used as part of Time-Delay Interferometry (TDI)."
 DLR,Deutsches Zentrum fuer Luft- und Raumfahrt,German Aerospace Center
 DM,Dark Matter,
 DMS,Document Management System,
@@ -146,7 +146,7 @@ DSP,Data Signal Processing,
 DTM,Deterministic Transfer Manoeuvre,
 DTU,Danmarks Tekniske Universitet,Technical University of Denmark
 DWD,Double White Dwarf (binary),
-DWS,Differential Wavefront Sensing,A comparison of the phase difference of the beatnote of two interferring beams wihtin the segments of a Quadrant Photoreceiver (QPR), this analysis is performed by the Phasemeter (PMS) and results in the angle of incidence of the laser beams onto the Quadrant Photoreceiver (QPR).
+DWS,Differential Wavefront Sensing,"A comparison of the phase difference of the beatnote of two interferring beams wihtin the segments of a Quadrant Photoreceiver (QPR), this analysis is performed by the Phasemeter (PMS) and results in the angle of incidence of the laser beams onto the Quadrant Photoreceiver (QPR)."
 E2E,End-to-End,
 EBB,Engineering (or Elegant) Bread Board,
 EBM,External Balance Mass,
@@ -166,7 +166,7 @@ ELISA,Evolved Laser Interferometer Space Antenna,
 ELITE,European LISA Technology Experiment,
 ELT,Extremely Large Telescope,
 ELV,Expendable Launch Vehicle,
-EM,Engineering Model,When referring to the design of a payload system in LISA, such as the optical bench, the Phasemeter, or the Laser; an EM is a flight representative model of such a design in terms of form, fit and function and is used for functional and failure effect verification.
+EM,Engineering Model,"When referring to the design of a payload system in LISA, such as the optical bench, the Phasemeter, or the Laser; an EM is a flight representative model of such a design in terms of form, fit and function and is used for functional and failure effect verification."
 EMA,Electro-Magnetic,
 EMC,Electro-Magentic Compatibility,
 EMI,Electro-Magentic Interference,
@@ -176,17 +176,17 @@ EOB,effective one-body,
 EOL,End-Of-Life,
 EOM,Electro-Optical Modulator,
 EOM,Equations of Motion,
-ePMS,Extended Phase Measuring System,The name given to the Phasemeter (PMS) to explain that it does more than just measure phase, for example it also does the clock-tone transfer, performs pseudo-range measurements, establishes a data link between spacecraft via the laser links, contributes to link aquisition, and is part of the Drag-Free Attitude Control System (DFACS) loop. However it is usually just referred to as PMS or just "The Phasemeter".
+ePMS,Extended Phase Measuring System,"The name given to the Phasemeter (PMS) to explain that it does more than just measure phase, for example it also does the clock-tone transfer, performs pseudo-range measurements, establishes a data link between spacecraft via the laser links, contributes to link aquisition, and is part of the Drag-Free Attitude Control System (DFACS) loop. However it is usually just referred to as PMS or just 'The Phasemeter'."
 EPS,Extended Press-Schechter Formalism,
 EPTA,European Pulsar Timing Array,
 EQM,Engineering and Qualification Model,
 ERST,Early Release Science Time,
 ESA,European Space Agency,
-ESAC,European Space Astronomy Centre,"""In Madrid, Spain"""
+ESAC,European Space Astronomy Centre,"In Madrid, Spain"
 ESDC,ESAC Science Data Centre,
 ESOC,European Space Operations Centre,
 ESP,Extended Science Phase,
-ESTEC,European Space Research and Technology Centre,"""in Noordwijk, Netherlands"""
+ESTEC,European Space Research and Technology Centre,"in Noordwijk, Netherlands"
 ESTRACK,European Space TRACKing,
 ET,Einstein Telescope,
 ETU,Engineering Thermal Unit,
@@ -196,8 +196,8 @@ FAQ,Frequently Asked Question(s),
 FBD,Functional Block Diagram,
 FCC,Future Circular Collider,
 FDIR,"Failure Detection, Isolation, And Recovery",
-FDS,Frequency Distribution System,A module of the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that is responsible for distributing all the clocks and tones needed for phase extraction, as well as producing and providing the clock sideband 2.4 GHz signals to the Lasers. To be renamed to Frequency Distribution Module (FDM).
-FDM,Frequency Distribution Module,A module of the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that is responsible for distributing all the clocks and tones needed for phase extraction, as well as producing and providing the clock sideband 2.4 GHz signals to the Lasers.
+FDS,Frequency Distribution System,"A module of the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that is responsible for distributing all the clocks and tones needed for phase extraction, as well as producing and providing the clock sideband 2.4 GHz signals to the Lasers. To be renamed to Frequency Distribution Module (FDM)."
+FDM,Frequency Distribution Module,"A module of the Interferometric Processing Unit (IPU) of the Phasemeter (PMS) that is responsible for distributing all the clocks and tones needed for phase extraction, as well as producing and providing the clock sideband 2.4 GHz signals to the Lasers."
 FE,Finite Element,
 FEE,Front-End Electronics,
 FEE SAU,Front-End Electronics Sensing And Actuation Unit,
@@ -230,7 +230,7 @@ GBS,Galactic Binaries,
 GCR,Galactic Cosmic Ray,
 GCRS,Geocentric Celestial Reference System,
 GOAT,Gravitational Observatory Advisory Team,
-GPRM,Grabbing Position Release Mechanism,"[IDS doc] Each OB has two Fibre-Switch-Units (FSUs), one to provide the means to switch between the prime and redundant OB feed fibres (coming from the laser system) and one to switch between the prime and redundant backlink fibre."
+GPRM,Grabbing Position Release Mechanism,
 GPS,Global Positioning System,
 GR,General Theory Of Relativity,
 GR740,The ESA Next Generation Microprocessor (NGMP),
@@ -243,7 +243,7 @@ GS,Ground Station,
 GSE,Ground Support Equipment,
 GSF,Gravitational Self-Force,
 GSFC,Goddard Space Flight Center,
-GTO,Geostationary Transfer Orbit,"refers to variation of TTL between what was measured on ground during AIVT, and wht we end up with in space - [my wording of my I got from Ewan@LIG PM3]"
+GTO,Geostationary Transfer Orbit,
 GUT,Grand Unified Theory,
 GW,Gravitational Wave,
 GW-WG,Gravitational-wave Observatory Working Group,
@@ -257,7 +257,7 @@ HG,Mercury,The Element.
 HGA,High-Gain Antenna,
 HK,Housekeeping,
 HL-LHC,High Luminosity Large Hadron Collider,
-HR,High Resolution,"[PDD] The GRS FEE is based on the 100 kHz capacitive sensing and audio-frequency actuation unit used in LPF. It has both High Resolution (HR) and Wide Range (WR) modes, offering, respectively, science mode operation with small displacements (up to 100 _m) and actuation forces (several nN) and a test"
+HR,High Resolution,
 HST,Hubble Space Telescope,
 I&T,Integration and Test(ing),
 I/F,interface,
@@ -265,7 +265,7 @@ IA,Instrument Amplifier,
 IAAS,Infrastructure As A Service,
 IAU,International Astronomical Union,
 IBM,Internal Balance Mass,
-ICC,Instrument Control Computer,cf EID-B 8.6
+ICC,Instrument Control Computer,
 ICD,Interface Control Document,
 ICRF,International Celestial Reference Frame,
 ICRS,International Celestial Reference System,
@@ -276,7 +276,7 @@ IDS,Interferometric Detection System,"Contains the Optical Bench, Phasemeter and
 IFO,InterFerOmeter,
 IFP,In-Field Pointing,
 IGM,Inter-Galactic Medium,
-ILS,Instrument Line of Sight,cf EID-A EIDA-R010290
+ILS,Instrument Line of Sight,
 IMA,Integrated Modular Avionics,
 IMBH,Intermediate-Mass Black Hole,
 IMBHB,Intermediate Mass Black Hole Binary,
@@ -294,7 +294,7 @@ IOT,Instruments Operations Team,
 IPC,Industrial Policy Committee,
 IPT,Integrated Product Team,
 IPTF,intermediate Palomar Transient Factory,
-IPU,Interferometric Processing Unit,A unit of the Phasemeter (PMS) that connects to the Quadrant Photoreceivers (QPRs) and performs the core phase extraction and pseudo-range measurements for the LISA Time-Delay Interferometry (TDI) pipeline, it provides this data to the Phasemeter Control Unit (PCU) after performing the first stage of filtering and downsampling.
+IPU,Interferometric Processing Unit,"A unit of the Phasemeter (PMS) that connects to the Quadrant Photoreceivers (QPRs) and performs the core phase extraction and pseudo-range measurements for the LISA Time-Delay Interferometry (TDI) pipeline, it provides this data to the Phasemeter Control Unit (PCU) after performing the first stage of filtering and downsampling."
 IRD,Interface Requirement Document,
 ISC,Inter-spacecraft Laser Communication,
 ISH,Inertial Sensor Head,
@@ -313,7 +313,7 @@ JPL,Jet Propulsion Laboratory,
 JWST,James Webb Space Telescope,
 KAGRA,Kamioka Gravitational-wave Detector,
 KSC,Kennedy Space Center,
-L0,Level 0 data,Raw data from the Phasemeter (PMS) phase extraction and filtering, delivered by the Phasemeter Control Unit (PCU) to the spacecraft platform, which then downlinks that data to Earth.
+L0,Level 0 data,"Raw data from the Phasemeter (PMS) phase extraction and filtering, delivered by the Phasemeter Control Unit (PCU) to the spacecraft platform, which then downlinks that data to Earth."
 L0.5,Level 0.5 data,
 L1,Level 1 data,TDI data streams
 L2,Level 2 data,After global fit. Propablity functions for individual sources.
@@ -339,7 +339,7 @@ LFS,Laser Frequency Stabilisation,
 LGA,Low-Gain Antenna,
 LH,Laser Head,
 LHC,Large Hadron Collider,
-LIC,Lisa Instrument Consortium,Payload providers
+LIC,Lisa Instrument Consortium,"Payload providers in a former concept of LISA"
 LID / LIC,Laser Induced Damage (LID) and Laser Induced Contamination (LIC),
 LIG,LISA Instrument Group,
 LIGO,Laser Interferemeter Gravitational Wave Observartory,
@@ -418,7 +418,7 @@ MOPA,Master Oscillator Power Amplifier,
 MOSA,Moving Optical Sub-Assembly,"Telescope, an optical bench, a gravitational reference sensor (including free falling TM) and a support structure"
 MOT,Magneto-Optical Trap,
 MOTHER-S/C,Mother spacecraft,
-MOU,Memorandum of Understanding,"""Contract between ESA and the international partners (such as NASA)"""
+MOU,Memorandum of Understanding,"Contract between ESA and the international partners (such as NASA)"
 MPR,Mission Performance Requirement,
 MPS CG,Cold Gas Micro Propulsion System,
 MR,Measurement Requirement,
@@ -455,7 +455,7 @@ NS,Neutron Star,
 NSGS,NASA Science Ground Segment,
 NSP,Nominal Science Phase,
 NSPIRES,NASA Solicitation and Proposal Integrated Review and Evaluation System,
-NTC,Negative Temperature Coefficient,"(some DIAG temp. sensors). NTC stands for �Negative Temperature Coefficient. NTC thermistors are resistors with a negative temperature coefficient, which means that the resistance decreases with increasing temperature. They are primarily used as resistive temperature sensors and current-limiting dev"
+NTC,Negative Temperature Coefficient,"Negative Temperature Coefficient thermistors are resistors with a negative temperature coefficient, which means that the resistance decreases with increasing temperature. They are primarily used as resistive temperature sensors and current-limiting dev"
 NWNH,New Worlds New Horizons,
 OAM,Optical Assembly Mechanics,
 OAS,Optical Assembly Subsytem,
@@ -481,7 +481,7 @@ P/M,Propulsion Module,
 PA,Power Amplifier,
 PA,Product Assurance,
 PAA,Point-Ahead Angle,
-PAAM,Point-Ahead Angle Mechanism,The PAAM is a steering mirror that points ahead the outgoing (RX) beam to compensate for the distance the distant spacecraft moves in the light travel time between spacecraft. (Thesis Maike)[IDS doc] The transmit laser beam steering angle needs to be adjusted at least once every few minutes with an
+PAAM,Point-Ahead Angle Mechanism,The PAAM is a steering mirror that points ahead the outgoing (RX) beam to compensate for the distance the distant spacecraft moves in the light travel time between spacecraft.
 PAC,Particulate Contamination,
 PAN-STARRS,The Panoramic Survey Telescope & Rapid Response System,
 PAR,phase accumulation register,
@@ -495,7 +495,7 @@ PCOS,Physics of the Cosmos,
 PCP,Payload Commanding and Processing,
 PCP-GSE,Payload Commanding and Processing Ground Support Equipment,
 PCS,Payload Control Subsystem,
-PCU,Phasemeter Control Unit,The unit within the Phasemeter (PMS) that controls and powers the Interferometric Processor Unit (IPU), performs the final science data filtering, and performs the laser transponder lock.
+PCU,Phasemeter Control Unit,"The unit within the Phasemeter (PMS) that controls and powers the Interferometric Processor Unit (IPU), performs the final science data filtering, and performs the laser transponder lock."
 PCU,Power Conditioning Unit,
 PD,Photo Diode,
 PDD,Payload Description Document,
@@ -520,7 +520,7 @@ PMF,Polarization-Maintaining Fibre,
 PMFDE,Pahse Meter Frequency Distribution Electronics,
 PMFEE,Phase Meter Front-End Electronics,
 PMON,Power monitor(s),
-PMS,Phase Measurement Subsystem,The Phase Measurement Subsystem, or often just referred to as "the Phasemeter", is made up of two units: the Interferometric Processor Unit (IPU), and the Phasemeter Control Unit (PCU). More than just measuring and tracking the longitudinal phase of the beatnote between two interferring laser beams, it also does the clock-tone transfer and performs pseudo-range measurements, which are two key parts of the Time Delay Interferometry (TDI) pipeline to compensate for the drifting of the spacecraft and for their imprecise and unmatched clocks. In addition, the Phasemeter establishes a data link between spacecraft via the laser links, contributes to link aquisition via Fourier Transform analysis, and is part of the Drag-Free Attitude Control System (DFACS) loop using its ability to perform Differential Wavefront Sensing (DWS).
+PMS,Phase Measurement Subsystem,"The Phase Measurement Subsystem, or often just referred to as 'the Phasemeter', is made up of two units: the Interferometric Processor Unit (IPU), and the Phasemeter Control Unit (PCU). More than just measuring and tracking the longitudinal phase of the beatnote between two interferring laser beams, it also does the clock-tone transfer and performs pseudo-range measurements, which are two key parts of the Time Delay Interferometry (TDI) pipeline to compensate for the drifting of the spacecraft and for their imprecise and unmatched clocks. In addition, the Phasemeter establishes a data link between spacecraft via the laser links, contributes to link aquisition via Fourier Transform analysis, and is part of the Drag-Free Attitude Control System (DFACS) loop using its ability to perform Differential Wavefront Sensing (DWS)."
 PN,Post-Newtonian,
 POR,Payload Operations Request,
 PPE,Parameterized Post-Einsteinian,
@@ -641,17 +641,17 @@ SOSL,Science Operations Study Lead,
 SOVT,Science Operations Verifications Tests,
 SOW,Statement Of Work,
 SPA,Stationary Phase Approximation,
-SPC,Science Programme Committee,"The SPC is an ESA advisory body. The Council shall refer to SPC for any matter relating to the mandatory scientific programme. The SPC is following scientific projects from their selection to their execution, as well as forward-looking studies with a view to the preparation and selection of future p"
+SPC,Science Programme Committee,"The SPC is an ESA advisory body. The Council shall refer to SPC for any matter relating to the mandatory scientific programme. The SPC is following scientific projects from their selection to their execution, as well as forward-looking studies with a view to the preparation and selection of future projects"
 SQUID,Superconducting Quantum Interference Device,
 SRD,System Requirement Document,
 SRP,solar radiation pressure,
 SRR,System Requirements Review,
 SRS,spacecraft reference system,
 SS,Sub-system,
-SSAC,Space Science Advisory Committee,The Space Science Advisory Committee (SSAC) is the senior advisory body to the Director of Science (D/SCI) on all matters concerning space science included in the mandatory science programme of ESA. The Committee is the main interpreter of the views and needs of the European scientific community as
+SSAC,Space Science Advisory Committee,The Space Science Advisory Committee (SSAC) is the senior advisory body to the Director of Science (D/SCI) on all matters concerning space science included in the mandatory science programme of ESA. The Committee is the main interpreter of the views and needs of the European scientific community as regards access to space experimentation and data exploitation in the mandatory science programmes.
 SSB,Solar System Barycenter,
 SSC,Senior Science Committee,
-SSEWG,Solar System and Exploration Working Group,The Solar System and Exploration Working Group (SSEWG) provide scientific advice mainly to the Space Science Advisory Committee (SSAC). The working group members are scientists from the ESA Member States with expertise in the specific disciplines covered by the SSEWG. The chair of the working group
+SSEWG,Solar System and Exploration Working Group,The Solar System and Exploration Working Group (SSEWG) provide scientific advice mainly to the Space Science Advisory Committee (SSAC). The working group members are scientists from the ESA Member States with expertise in the specific disciplines covered by the SSEWG. The chair of the working group is also a member of the SSAC.
 SSRD,Space Segment Requirements Document,
 SST,Science Study Team,
 STE,Service Time Equivalent,
