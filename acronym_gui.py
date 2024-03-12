@@ -60,7 +60,7 @@ def read_acronyms(filename):
         Table of the acronyms.
 
     """
-    tb_all = ascii.read(filename, format='csv')
+    tb_all = ascii.read(filename, format='csv', encoding='utf-8')
     return tb_all
 
 

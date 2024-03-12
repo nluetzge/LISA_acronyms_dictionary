@@ -55,6 +55,9 @@ table_filename = args.table
 filename = Path(__file__).resolve().parent / 'tables/LISA_acronyms.csv'
 tb_all = read_acronyms(filename)
 tb_add = read_acronyms(table_filename)
+if tb_add.colnames[0]=='\ufeffAcronym':
+    tb_add.rename_column('\ufeffAcronym', 'Acronym')
+
 
 tb_new = join(tb_all, tb_add, keys='Acronym', join_type='outer')
 
@@ -86,6 +89,11 @@ print('Removed {:} duplicates'.format(n_before-n_after))
 # How many acronyms did we add?
 nadd = len(tb_out) - len(tb_all)
 print('Added {:d} new acronyms'.format(nadd))
+i=0
+for t in tb_out:
+    if t['Acronym'] not in tb_all['Acronym']:
+        print(i, t['Acronym'])
+        i+=1
 # ===============================================================
 # Writing
 # ===============================================================
