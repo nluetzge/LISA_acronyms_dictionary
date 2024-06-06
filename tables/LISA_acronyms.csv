@@ -364,6 +364,7 @@ GRB,Gamma-Ray Burst,
 GRS,Gravitational Reference (Sub)system,
 GRS-FEE,Gravitational Reference (Sub)system Front End Electronics,GRS-FEE=GRS-SAU + GRS-PCU
 GRSH,Gravitational Reference (Sub)system Head,
+GRS-TME,Gravitational Reference (Sub)system Test Mass Emulator, "A Ground Support Equipment (GSE) for emulating the Test Mass (TM) in order to test the Front End Electronics (FEE) of the Gravitational Reference (Sub)system (GRS)"
 GS,Ground Station,
 GS,Ground Segment,
 GSE,Ground Support Equipment,
@@ -732,6 +733,7 @@ PLS,Power Law Sensitivity,
 PM,Phase Meter,
 PM,Progress Meeting/Management,
 PM,Proof Mass,
+PMB, Project Manager Board, "As for example the IDS-PMB being the Project Manager Board for the Interferometric Detection (Sub)system. This was transisioned from the National Project Manager Board (NPMB) before adoption." 
 PMDSP,Phase Meter Digital Signal Processor,
 PMF,Polarization-Maintaining Fibre,
 PMFDE,Phase Meter Frequency Distribution Electronics,
@@ -995,6 +997,7 @@ TM,Test Mass (Often Proof Mass),
 TM-I/F,test mass interface,
 TM-OGSE,Test-Mass Optical Ground Equipment,
 TM/TC,Telemetry/Telecommand,
+TME, Test Mass Emulator, "A Ground Support Equipment (GSE) for emulating the Test Mass (TM) in order to test the Front End Electronics (FEE) of the Gravitational Reference (Sub)system (GRS)"
 TMI,test mass interferometer,
 TML,Total Mass Loss,total mass loss of material outgassed from a specimen that is maintained at a specific constant temperature and operating pressure for a specified time.
 TMM,Thermal Mathematical Model,
