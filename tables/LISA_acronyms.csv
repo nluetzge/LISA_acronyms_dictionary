@@ -155,7 +155,8 @@ CSD,Cross Spectral Density,
 CST,Community Science Team,
 CTE,Coefficient Of Thermal Expansion,
 CTP,Core Technology Program,
-CVCM,"Collected volatile condensable material,",quantity of outgassed matter from a test specimen that condenses on a collector maintained at a specific temperature for a specific time.
+CU,Coordination Unit, In the DDPC this is a sub-unit to organize the work. There are currently 6 coordination units. 
+CVCM,Collected Volatile Condensable Material,quantity of outgassed matter from a test specimen that condenses on a collector maintained at a specific temperature for a specific time.
 CVM,Caging and Venting Mechanism,
 CW,ClockWise,Refers to constellation design option where the LISA formation appears to rotate clockwise when seen from the Sun
 CW,Continuous Wave,Refers to constellation design option where the LISA formation appears to rotate clockwise when seen from the Sun
@@ -668,6 +669,7 @@ OBA,Optical Bench Assembly,
 OBC,On-Board Computer,
 OBCP,On-Board Control Procedure,LPF acronym at least
 OBDH,On Board Data Handling,
+OBMCU,Optical Bench Mechanism Control Unit,
 OBS,Organisation Breakdown Structure,
 OBSW,On-Board Software,
 OBT,On-Board Time,
