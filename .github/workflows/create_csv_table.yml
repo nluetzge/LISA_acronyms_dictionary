@@ -25,12 +25,12 @@ jobs:
 
       - name: Convert SQLite database to CSV
         run: |
-          sqlite3 database/acronyms.db -header -csv "SELECT * FROM Acronyms;" > acronyms.csv
+          sqlite3 database/acronyms.db -header -csv "SELECT * FROM Acronyms;" > tables/LISA_acronyms.csv
 
       - name: Commit and push the generated CSV
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add acronyms.csv
-          git commit -m "Automatically updated acronyms.csv"
+          git add  tables/LISA_acronyms.csv
+          git commit -m "Automatically updated  LISA_acronyms.csv"
           git push
