@@ -19,6 +19,6 @@ df = tb_all.to_pandas()
 
 conn = sqlite3.connect('acronyms.db')
 
-df.to_sql('table_name', conn, if_exists='replace', index=False)
+df.to_sql('Acronyms', conn, if_exists='replace', index=False)
 conn.commit()
 conn.close()
