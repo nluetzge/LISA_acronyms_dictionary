@@ -1,0 +1,36 @@
+name: Convert SQLite DB to CSV
+
+on:
+  push:
+    paths:
+      - database/acronyms.db  # Trigger the action only if the SQLite database file changes
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install SQLite and pandas
+        run: |
+          sudo apt-get install sqlite3
+          pip install pandas
+
+      - name: Convert SQLite database to CSV
+        run: |
+          sqlite3 database/acronyms.db -header -csv "SELECT * FROM Acronyms;" > acronyms.csv
+
+      - name: Commit and push the generated CSV
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add acronyms.csv
+          git commit -m "Automatically updated acronyms.csv"
+          git push
