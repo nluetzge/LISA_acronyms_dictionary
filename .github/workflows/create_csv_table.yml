@@ -25,7 +25,7 @@ jobs:
 
       - name: Convert SQLite database to CSV
         run: |
-          sqlite3 acronyms.db -header -csv "SELECT * FROM Acronyms ORDER BY acronym ASC;" > tables/LISA_acronyms.csv
+          sqlite3 database/acronyms.db -header -csv "SELECT * FROM Acronyms ORDER BY acronym ASC;" > tables/LISA_acronyms.csv
 
       - name: Commit and push the generated CSV
         run: |
