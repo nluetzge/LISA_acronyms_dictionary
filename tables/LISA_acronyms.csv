@@ -317,6 +317,7 @@ FF-OGSE,"Far-Field Optical Ground Support Equipment","Optical Bench"
 FFOGSE,"Far Field Optical Ground Support Equipment","Optical Bench"
 FFPT,"Full Functional Performance Test",
 FFT,"Full Functional Test",
+FFT,"Fast Fourier Transform",""
 FIOS,"Fibre Injector Optical Subassembly",
 FIT,"Failure In Time (per billion cycles)",
 FITS,"Flexible Image Transport System","A widely used data format for images"
@@ -363,8 +364,8 @@ GRACE-FO,"GRACE Follow-On",
 GRB,"Gamma-Ray Burst",
 GRS,"Gravitational Reference (Sub)system",
 GRS-FEE,"Gravitational Reference (Sub)system Front End Electronics","GRS-FEE=GRS-SAU + GRS-PCU"
-GRSH,"Gravitational Reference (Sub)system Head",
 GRS-TME,"Gravitational Reference (Sub)system Test Mass Emulator","A Ground Support Equipment (GSE) for emulating the Test Mass (TM) in order to test the Front End Electronics (FEE) of the Gravitational Reference (Sub)system (GRS)"
+GRSH,"Gravitational Reference (Sub)system Head",
 GS,"Ground Station",
 GS,"Ground Segment",
 GSE,"Ground Support Equipment",
@@ -377,6 +378,7 @@ GTO,"Geostationary Transfer Orbit","refers to variation of TTL between what was 
 GUT,"Grand Unified Theory",
 GW,"Gravitational Wave",
 GW-WG,"Gravitational-wave Observatory Working Group",
+GWB,"Gravitational Wave Background",""
 H/W,Hardware,
 HBR,"High Bit Rate",
 HC-HPC,"High Current-High Power Command",
@@ -480,6 +482,7 @@ LAT,"Lot Acceptance Test",
 LBR,"Low Bit Rate",
 LCA,"LISA Core Assembly",
 LCC,"Life Cycle Cost",
+LCDM,"Lambda Cold Dark Matter","The Lambda-CDM, Lambda cold dark matter, or _CDM model is a mathematical model of the Big Bang theory with three major components: 1. a cosmological constant, denoted by lambda (_), associated with dark energy; 2. the postulated cold dark matter, denoted by CDM; 3. ordinary matter"
 LCL,"LISA Consortium Lead",
 LCL,"Latching Current Limiter",
 LCM,"Spacecraft Composite Stack",
@@ -494,6 +497,7 @@ LECS,"LISA Early Career Scientist Group","The Early Career Scientist Group inten
 LED,"Light-Emitting Diode",
 LEM,"Laser Electronics Module",
 LEOP,"Launch and Early Operations Phase",
+LFN,"Laser Frequency Noise",""
 LFS,"Laser Frequency Stabilisation",
 LGA,"Low-Gain Antenna",
 LH,"Laser Head",
@@ -763,7 +767,8 @@ PSF,"Point-Spread Function",
 PSM,"Power Supply Module","A module contained within the Phasemeter Control Unit (PCU) of the Phasemeter (PMS) that is responsible for converting the spacecraft bus power into the power required for the rest of the Phasemeters units and modules."
 PSR,Pulsar,
 PT,"Pilot Tone","The pilot tone (e.g. a 75/37.5 MHz sinusoidal tone) is added to beatnote signals within the Phasemeters (PMSs) analog front end. Its purpose is to measure sampling aperture jitters within the ADCs which are later used to correct these jitters. [Timing architecture TN]"
-PT,platinum,"The pilot tone (e.g. a 75 MHz sinusoidal tone) is added to beatnote signals within the phasemeter analog front end. Its purpose is to measure sampling aperture jitters within the ADCs which are later used to correct these jitters. [Timing architecture TN]"
+PT,platinum,""
+PT,"Phase Transition",""
 PTA,"Pulsar Timing Array",
 PTF,"Palomar Transient Factory",
 PTR,"Post Test Review",
@@ -891,6 +896,7 @@ SGWB,"Stochastic Gravitational-wave Background",
 SI,"Science investigation",
 SIA,"Sun Incident Angle",
 SIC,"Silicon Carbide",
+SIGW,"Scalar-Induced Gravitational Waves","Stochastic backgrounds formed by the collapse of overdensities in the primordial powerspectrum."
 SIM,"Space Interferometry Mission",
 SIP,"Science Implementation Plan",
 SIPS,"Science Implementation Plans",
@@ -950,6 +956,7 @@ SSRD,"Space Segment Requirements Document",
 SSS,"SW System Specifications",
 SST,"Science Study Team",
 STE,"Service Time Equivalent",
+STFT,"Short-Time Fourier Transform","Used in some LISA data analysis pipelines."
 STM,"Structural Model","STM have all the structure, usually no or very limited functionality"
 STM,"Structural Thermal Model",
 STOC,"Science Technology Operations Centre",
@@ -1043,6 +1050,7 @@ URF,"Unit Reference Frame",
 URL,"Uniform Resource Locator",
 US,Ultra-Sonic,
 USO,"Ultra-Stable Oscillator",
+USR,"Ultra Slow-Roll Inflation Model","Common mechanism in primordial black hole production models."
 UT,"University of Trento",
 UTC,"Coordinated Universal Time",
 UV,Ultra-Violet,
@@ -1082,11 +1090,3 @@ YB,ytterbium,
 ZAR,"Zemax Archive File",
 ZIFO,"Zerudur Interferomenter",
 ZTF,"Zwicky Transient Facility",
-USR,"Ultra Slow-Roll Inflation Model","Common mechanism in primordial black hole production models."
-SIGW,"Scalar-Induced Gravitational Waves","Stochastic backgrounds formed by the collapse of overdensities in the primordial powerspectrum."
-PT,"Phase Transition",""
-GWB,"Gravitational Wave Background",""
-STFT,"Short-Time Fourier Transform","Used in some LISA data analysis pipelines."
-FFT,"Fast Fourier Transform",""
-LFN,"Laser Frequency Noise",""
-LCDM,"Lambda Cold Dark Matter","The Lambda-CDM, Lambda cold dark matter, or _CDM model is a mathematical model of the Big Bang theory with three major components: 1. a cosmological constant, denoted by lambda (_), associated with dark energy; 2. the postulated cold dark matter, denoted by CDM; 3. ordinary matter"
