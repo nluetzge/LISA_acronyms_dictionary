@@ -140,7 +140,6 @@ COSMOS,Cosmic Evolution Survey,
 COSWG,Cosmology Working Group,
 COTE,Check-Out Test Equipment,
 COTS,Commercial off the Shelf,
-CPC,Composite Processing Component,Performance Model: Block or package used in pipelines. Composed of several Processing Components (PC).
 CPIS,Consortium Provided Items,
 CPPA,Coordinated Parts Procurement Agency,
 CPTA,Chinese Pulsar Timing Array,
@@ -377,12 +376,11 @@ GSFC,Goddard Space Flight Center,
 GSIR,Ground Segment Implementation Review,
 GSORR,Ground Segment Operations Readiness Review,
 GSRR,Ground Segment Readiness Review,
-GTO,Geostationary Transfer Orbit,"Refers to variation of TTL between what was measured on ground during AIVT, and what we end up with in space."
+GTO,Geostationary Transfer Orbit,"refers to variation of TTL between what was measured on ground during AIVT, and what we end up with in space -"
 GUT,Grand Unified Theory,
 GW,Gravitational Wave,
 GW-WG,Gravitational-wave Observatory Working Group,
 GWB,Gravitational Wave Background,
-GWIC,Gravitational Wave International Committee,"Gravitational Wave International Committee (GWIC) was formed in 1997 to facilitate international collaboration and cooperation in the construction, operation and use of the major gravitational wave detection facilities world-wide."
 H/W,Hardware,
 HBR,High Bit Rate,
 HC-HPC,High Current-High Power Command,
@@ -442,7 +440,6 @@ INSPRL,Interferometer in Space for Detecting Gravity-wave Radiation using Lasers
 IOCR,In-Orbit Commissioning Review,
 IOT,Instruments Operations Team,
 IPC,Industrial Policy Committee,
-IPN,Input Parameters and Noises,Performance Model: where a model for each noise is presented in terms of a subset of the Input Parameters and Noises (IPN).
 IPT,Integrated Product Team,
 IPTF,intermediate Palomar Transient Factory,
 IPU,Interferometric Processing Unit,"A unit of the Phasemeter (PMS) that connects to the Quadrant Photoreceivers (QPRs) and performs the core phase extraction and pseudo-range measurements for the LISA Time-Delay Interferometry (TDI) pipeline, it provides this data to the Phasemeter Control Unit (PCU) after performing the first stage o"
@@ -492,7 +489,6 @@ LCDM,Lambda Cold Dark Matter,"The Lambda-CDM, Lambda cold dark matter, or _CDM m
 LCL,LISA Consortium Lead,
 LCL,Latching Current Limiter,
 LCM,Spacecraft Composite Stack,
-LCPM,LISA Constellation Performance Model,A collection of physical models that describes the performance of each sub-system in the frequency domain
 LD,Laser Diode,
 LDB,LISA Mission Database,
 LDC,LISA Data Challenge,Formerly called MLDC
@@ -551,7 +547,6 @@ LSST,Large Synoptic Survey Telescope,
 LST,LISA Science Team,
 LTP,Lisa Pathfinder Technology Package,
 LTPDA,LISA Technology Package Data Analysis,LTPDA is a MATLAB toolbox that uses an object-oriented approach to data analysis (https://www.elisascience.org/ltpda/)
-LTT,Light Travel Time,
 LUT,Look-Up Table,
 LV,Latch Valve,
 LV,Launch vehicle,
@@ -569,7 +564,6 @@ MBH,Massive Black Hole,
 MBHB,Massive Black Hole Binary,
 MBW,Measurement Bandwidth,
 MCI,"Mass, Center of gravity and Inertia",
-MCLK,Master Clock,
 MCMC,Markov-Chain Monte Carlo,
 MCR,Mission Consolidation Review,
 MCU,Mechanism Control Unit,"[IDS doc] The Mechanism Control Unit (MCU) is an avionics unit dedicated to the control of the mechanisms mounted on the optical bench. These mechanisms are: the PAAM, the FSUA and the BAM. The unit shall interface with the mechanisms to provide power and command and control functions."
@@ -717,7 +711,6 @@ PARX,public archive,
 PATP,Preliminary Authorisation To Proceed,
 PBH,Primordial Black Hole,
 PBS,Polarising Beam Splitter (might be an LPF acronym),
-PC,Processing Component,Performance Model: Single algorithm used in pipelines.
 PCB,Parts Control Board,
 PCB,Printed Circuit Board,
 PCC,Payload Control Computer,
@@ -819,7 +812,6 @@ RFA,Request for Approval,Used to approve materials and processes
 RFA,Request for Frequency Assignment,Used to approve materials and processes
 RFD,Request for Deviation,
 RFDN,Radio Frequency Distribution Network,
-RFI,Reference Interferometer,
 RFI,Request for Information,
 RFP,Request for Proposal,
 RFQ,Request for Quotation,
@@ -1003,7 +995,6 @@ TCM,Trajectory Correction Manoeuvre,
 TCS,Thermal Control Subsystem,
 TCVR,Transceiver,
 TDA,Technology Development Activities,
-TDB,Barycentric Dynamical Time,
 TDI,Time-Delay Interferometry,
 TDI X,LISA's 2-arm configuration,
 TDIR,Time Delay Interferometry Ranging,
