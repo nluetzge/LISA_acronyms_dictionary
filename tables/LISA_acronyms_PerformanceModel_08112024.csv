@@ -1,0 +1,10 @@
+﻿Acronym,Translation,Description
+CPC,Composite Processing Component,Performance Model: Block or package used in pipelines. Composed of several Processing Components (PC).
+GWIC,Gravitational Wave International Committee,"""Gravitational Wave International Committee (GWIC) was formed in 1997 to facilitate international collaboration and cooperation in the construction, operation and use of the major gravitational wave detection facilities world-wide. It is associated with the International Union of Pure and Applied Physics as its Working Group WG.11. Through this association, GWIC is connected with the International Society on General Relativity and Gravitation (IUPAP's Affiliated Commission AC.2), its Commission C19 (Astrophysics), and another Working Group, the AstroParticle Physics International Committee (APPIC)."""
+IPN,Input Parameters and Noises,Performance Model: where a model for each noise is presented in terms of a subset of the Input Parameters and Noises (IPN).
+LCPM,LISA Constellation Performance Model,A collection of physical models that describes the performance of each sub-system in the frequency domain
+LTT,Light Travel Time,
+MCLK,Master Clock,
+PC,Processing Component,Performance Model: Single algorithm used in pipelines.
+RFI,Reference Interferometer,
+TDB,Barycentric Dynamical Time,
